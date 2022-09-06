@@ -1,6 +1,6 @@
-# create-svelte
+# EdgeDB through SvelteKit!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A simple web application where we are displaying a list of movies from an EdgeDB through SvelteKit!
 
 ## Scope of the project
 
