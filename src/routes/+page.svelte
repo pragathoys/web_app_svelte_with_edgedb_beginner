@@ -1,13 +1,6 @@
 <script>
-import { each } from "svelte/internal";
-
-	/**
-* @type {string | any[]}
-*/
-	let movies = [
-		{'title':'Demo movie 1' , 'release_year':2022},
-		{'title':'Demo movie 2' , 'release_year':2021}
-	];
+  /** @type {import('./$types').PageData} */
+  export let data;
 
 </script>
 
@@ -22,14 +15,18 @@ import { each } from "svelte/internal";
 <p>Below you will find a list of movies that are available in our EdgeDB:</p>
 
 <ul>
-	{#if movies.length==0}
+	{#if data.movies.length==0}
 	<li><span class="error">No movies found :(</span></li>
 	{:else}
-		{#each movies as movie}
+		{#each data.movies as movie}
 			<li><span class="title">{movie.title}</span><span class="release_year">({movie.release_year})</span></li>
 		{/each}
 	{/if}
 </ul>
+
+<h2>Screenshots</h2>
+<p>If you run the application you should see something like this:</p>
+<p>![Screenshot 1 - The list of the movies](static/svelte_edgedb_example.jpg)</p>
 
 <style>
 	li{
