@@ -1,5 +1,13 @@
 <script>
+import { each } from "svelte/internal";
 
+	/**
+* @type {string | any[]}
+*/
+	let movies = [
+		{'title':'Demo movie 1' , 'release_year':2022},
+		{'title':'Demo movie 2' , 'release_year':2021}
+	];
 
 </script>
 
@@ -14,7 +22,13 @@
 <p>Below you will find a list of movies that are available in our EdgeDB:</p>
 
 <ul>
+	{#if movies.length==0}
 	<li><span class="error">No movies found :(</span></li>
+	{:else}
+		{#each movies as movie}
+			<li><span class="title">{movie.title}</span><span class="release_year">({movie.release_year})</span></li>
+		{/each}
+	{/if}
 </ul>
 
 <style>
@@ -23,6 +37,16 @@
 		border:1px solid #efefef;
 		margin-bottom:5px;
 		padding:10px;
+	}
+
+	.title{
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.release_year{
+		padding-left:10px;
+		color:cornflowerblue;
 	}
 
 	.error{
