@@ -2,17 +2,11 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Scope of the project
 
-If you're seeing this, you've probably already done this step. Congrats!
+The project simply demonstrates the use of the EdgeDB for storing data and the SvelteKit for displaying those data. 
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+**Enjoy!**
 
 ## Developing
 
