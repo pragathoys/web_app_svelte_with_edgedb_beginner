@@ -24,10 +24,6 @@
 	{/if}
 </ul>
 
-<h2>Screenshots</h2>
-<p>If you run the application you should see something like this:</p>
-<p>![Screenshot 1 - The list of the movies](static/svelte_edgedb_example.jpg)</p>
-
 <style>
 	li{
 		background-color: #fff;

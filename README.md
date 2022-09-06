@@ -30,3 +30,8 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Screenshots
+If you run the application you should see something like this:
+
+![Screenshot 1 - The list of the movies](static/svelte_edgedb_example.jpg)
